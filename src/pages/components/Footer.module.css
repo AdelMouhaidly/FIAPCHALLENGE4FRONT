@@ -1,0 +1,21 @@
+.rodape {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #0070f3;
+  text-align: center;
+  padding: 1.5rem 0;
+  width: 100%;
+  font-size: 0.9rem;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rodape p {
+  margin: 0.2rem 0;
+}
+
+.rodape p:hover {
+  color: #005bb5;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}

@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: rgba(255, 255, 255, 0.9);
+  color: #0070f3;
+  font-family: 'Poppins', sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0070f3;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo:hover {
+  color: #005bb5;
+  transform: scale(1.05);
+  text-shadow: 0 2px 5px rgba(0, 112, 243, 0.5);
+}
+
+
+.nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.nav a {
+  color: #0070f3;
+  text-decoration: none; 
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  padding: 0.25rem;
+  border-radius: 5px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 2px; 
+  background-color: #0070f3;
+  bottom: -3px; 
+  left: 0;
+  transition: width 0.3s ease-in-out; 
+}
+
+.nav a:hover::after {
+  width: 100%; 
+}
+
+.nav a:hover {
+  color: #005bb5;
+  transform: scale(1.05);
+}
+
+.usuarioMenu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  position: relative;
+  padding: 0.5rem 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.usuarioMenu:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.nomeUsuario {
+  font-size: 1rem;
+  color: #0070f3;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.seta {
+  font-size: 0.8rem;
+  color: #0070f3;
+  transition: transform 0.3s ease;
+}
+
+.seta.ativo {
+  transform: rotate(180deg);
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #0070f3;
+  text-decoration: none; 
+  position: relative;
+  transition: color 0.3s ease, transform 0.3s ease;
+  cursor: pointer;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 0; 
+  height: 2px; 
+  background-color: #0070f3;
+  bottom: -3px; 
+  left: 0;
+  transition: width 0.3s ease-in-out; 
+}
+
+.logo:hover::after {
+  width: 100%; 
+}
+
+.logo:hover {
+  color: #005bb5;
+  transform: scale(1.05);
+  text-shadow: 0 2px 5px rgba(0, 112, 243, 0.5);
+}
+
+
+.menuSuspenso {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 0.5rem 1rem;
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+}
+
+.menuSuspenso.ativo {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.menuSuspenso button {
+  background: none;
+  border: none;
+  color: #0070f3;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.menuSuspenso button:hover {
+  color: #ff4081;
+}
+
+.botaoLogout {
+  background-color: #007bff; /* Azul semelhante ao estilo do layout */
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.botaoLogout:hover {
+  background-color: #0056b3; 
+}
+
+.usuarioMenu {
+  display: flex;
+  align-items: center;
+  gap: 10px; 
+}

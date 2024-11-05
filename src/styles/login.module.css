@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.fundo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #a2d9ff, #f1f9ff);
+}
+
+.container {
+    display: flex;
+    width: 800px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+}
+
+.containerIlustracao {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e0f4ff;
+    padding: 2rem;
+}
+
+.ilustracao {
+    max-width: 100%;
+    height: auto;
+}
+
+.containerFormulario {
+    flex: 1;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.titulo {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.grupoInput {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.rotulo {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.input {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 16px;
+    color: #333;
+    background-color: #f9fafc;
+    border: 1px solid #d1d9e6;
+    border-radius: 5px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.input:focus {
+    border-color: #0070f3;
+}
+
+.opcoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.lembrarMe {
+    font-size: 14px;
+    color: #666;
+    display: flex;
+    align-items: center;
+}
+
+.checkbox {
+    margin-right: 0.5rem;
+}
+
+.link {
+    font-size: 14px;
+    color: #0070f3;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.mensagemErro {
+    color: #d9534f;
+    margin-bottom: 1rem;
+    font-size: 14px;
+}
+
+.botaoEntrar {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: #0070f3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botaoEntrar:hover {
+    background-color: #005bb5;
+}
+
+.textoRodape {
+    margin-top: 1.5rem;
+    font-size: 14px;
+    color: #333;
+    text-align: center;
+}
+
+.linkCadastro {
+    color: #0070f3;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.linkCadastro:hover {
+    text-decoration: underline;
+}
